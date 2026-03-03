@@ -79,6 +79,8 @@ void init_plugin (GtkWidget *)
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
+    system ("systemctl start cups-browsed");
+
     cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
 }
 
@@ -109,6 +111,8 @@ GtkWidget *get_tab (int tab)
 
 gboolean reboot_needed (void)
 {
+    system ("systemctl stop cups-browsed");
+
     return FALSE;
 }
 

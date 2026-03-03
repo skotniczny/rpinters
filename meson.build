@@ -10,6 +10,7 @@ presource_dir = join_paths(share_dir, 'rpcc')
 ui_dir = join_paths(resource_dir, 'ui')
 pui_dir = join_paths(presource_dir, 'ui')
 desktop_dir = join_paths(share_dir, 'applications')
+polkit_dir = join_paths(share_dir, 'polkit-1', 'rules.d')
 
 i18n = import('i18n')
 

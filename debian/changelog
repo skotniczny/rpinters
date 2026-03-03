@@ -1,3 +1,9 @@
+rpinters (1.7) trixie; urgency=medium
+
+  * Start and stop cups-browsed service when needed
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 03 Mar 2026 14:23:29 +0000
+
 rpinters (1.6) trixie; urgency=medium
 
   * Add window handle to init function
