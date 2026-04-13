@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 15:41+0000\n"
+"POT-Creation-Date: 2026-04-13 02:05+0200\n"
 "PO-Revision-Date: 2020-08-29 13:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: ../src/rpinters.c:93
+#: ../src/rpinters.c:94
 #, fuzzy
 msgctxt "tab"
 msgid "Printers"
@@ -36,18 +36,25 @@ msgstr "Drukarki"
 msgid "Printer “%s” has been deleted"
 msgstr "Usunięto drukarkę „%s”"
 
-#: ../src/cc-printers-panel.c:780
+#: ../src/cc-printers-panel.c:781
 #, fuzzy
 msgid "Are you sure you want to remove this printer?"
 msgstr "Na pewno unieważnić zdalnie zarządzane konto użytkownika „%s”?"
 
 #. Translators: Addition of the new printer failed.
-#: ../src/cc-printers-panel.c:1046
+#: ../src/cc-printers-panel.c:1048
 msgid "Failed to add new printer."
 msgstr "Dodanie nowej drukarki się nie powiodło."
 
+#: ../src/cc-printers-panel.c:1119 ../src/pp-details-dialog.c:293
+#: ../src/pp-details-dialog.c:294 ../src/pp-details-dialog.c:295
+#: ../src/pp-options-dialog.c:360 ../src/pp-options-dialog.c:397
+#: ../src/pp-printer-entry.c:1025 ../src/pp-printer-entry.c:1026
+msgid "You are not permitted to make changes to printer settings"
+msgstr ""
+
 #. Translators: The XML file containing user interface can not be loaded
-#: ../src/cc-printers-panel.c:1357
+#: ../src/cc-printers-panel.c:1360
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "Nie można wczytać interfejsu użytkownika: %s"
@@ -62,6 +69,7 @@ msgstr "Wczoraj"
 
 #. Translators: This is a date format string in the style of "Feb 24".
 #: ../src/cc-util.c:138
+#, fuzzy, c-format
 msgid "%b %e"
 msgstr "%-d %b"
 
@@ -135,7 +143,7 @@ msgid "0 seconds"
 msgstr "0 sekund"
 
 #. Translators: This is the title of the dialog. %s is the printer name.
-#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
+#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:377
 #, c-format
 msgid "%s Details"
 msgstr "Informacje o „%s”"
@@ -148,7 +156,7 @@ msgstr "Nie odnaleziono odpowiedniego sterownika"
 msgid "Select PPD File"
 msgstr "Wybór pliku PPD"
 
-#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
+#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:3
 #: ../src/new-printer-dialog.ui.h:3
 msgid "_Cancel"
 msgstr "_Anuluj"
@@ -159,11 +167,11 @@ msgstr "_Otwórz"
 
 #: ../src/pp-details-dialog.c:256
 msgid ""
-"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
-"PPD.GZ)"
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
+"*.PPD.GZ)"
 msgstr ""
-"Pliki PostScriptowego opisu drukarki (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
-"PPD.GZ)"
+"Pliki PostScriptowego opisu drukarki (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
+"*.PPD.GZ)"
 
 #. Translators: The found device is a JetDirect printer
 #: ../src/pp-host.c:478
@@ -293,7 +301,7 @@ msgstr "Logowanie a_utomatyczne"
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
 #: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
+#: ../src/pp-new-printer-dialog.c:799 ../src/pp-new-printer-dialog.c:806
 #: ../src/new-printer-dialog.ui.h:2
 msgid "Add Printer"
 msgstr "Dodanie drukarki"
@@ -317,44 +325,44 @@ msgid "Enter username and password to view printers on %s."
 msgstr ""
 "Proszę wprowadzić nazwę użytkownika i hasło, aby wyświetlić drukarki w „%s”."
 
-#: ../src/pp-new-printer-dialog.c:798
+#: ../src/pp-new-printer-dialog.c:799
 msgid "Searching for Printers"
 msgstr "Wyszukiwanie drukarek"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1618
+#: ../src/pp-new-printer-dialog.c:1619
 msgid "USB"
 msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1623
+#: ../src/pp-new-printer-dialog.c:1624
 msgid "Serial Port"
 msgstr "Port szeregowy"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1630
+#: ../src/pp-new-printer-dialog.c:1631
 msgid "Parallel Port"
 msgstr "Port równoległy"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1635
+#: ../src/pp-new-printer-dialog.c:1636
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1672
+#: ../src/pp-new-printer-dialog.c:1673
 #, c-format
 msgid "Location: %s"
 msgstr "Położenie: %s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1677
+#: ../src/pp-new-printer-dialog.c:1678
 #, c-format
 msgid "Address: %s"
 msgstr "Adres: %s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1704
+#: ../src/pp-new-printer-dialog.c:1705
 msgid "Server requires authentication"
 msgstr "Serwer wymaga uwierzytelnienia"
 
@@ -384,76 +392,76 @@ msgid "GhostScript pre-filtering"
 msgstr "Filtrowanie GhostScript przed wydrukiem"
 
 #. Translators: This option sets number of pages printed on one sheet
-#: ../src/pp-options-dialog.c:530
+#: ../src/pp-options-dialog.c:534
 msgid "Pages per side"
 msgstr "Stron na kartkę"
 
 #. Translators: This option sets whether to print on both sides of paper
-#: ../src/pp-options-dialog.c:542
+#: ../src/pp-options-dialog.c:546
 msgid "Two-sided"
 msgstr "Dwustronnie"
 
 #. Translators: This option sets orientation of print (portrait, landscape...)
-#: ../src/pp-options-dialog.c:554
+#: ../src/pp-options-dialog.c:558
 msgid "Orientation"
 msgstr "Orientacja"
 
 #. Translators: "General" tab contains general printer options
-#: ../src/pp-options-dialog.c:651
+#: ../src/pp-options-dialog.c:655
 msgctxt "Printer Option Group"
 msgid "General"
 msgstr "Ogólne"
 
 #. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
-#: ../src/pp-options-dialog.c:654
+#: ../src/pp-options-dialog.c:658
 msgctxt "Printer Option Group"
 msgid "Page Setup"
 msgstr "Ustawienia strony"
 
 #. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
-#: ../src/pp-options-dialog.c:657
+#: ../src/pp-options-dialog.c:661
 msgctxt "Printer Option Group"
 msgid "Installable Options"
 msgstr "Opcje instalacyjne"
 
 #. Translators: "Job" tab contains settings for jobs
-#: ../src/pp-options-dialog.c:660
+#: ../src/pp-options-dialog.c:664
 msgctxt "Printer Option Group"
 msgid "Job"
 msgstr "Zadanie"
 
 #. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
-#: ../src/pp-options-dialog.c:663
+#: ../src/pp-options-dialog.c:667
 msgctxt "Printer Option Group"
 msgid "Image Quality"
 msgstr "Jakość obrazu"
 
 #. Translators: "Color" tab contains color settings (e.g. color printing)
-#: ../src/pp-options-dialog.c:666
+#: ../src/pp-options-dialog.c:670
 msgctxt "Printer Option Group"
 msgid "Color"
 msgstr "Kolor"
 
 #. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
-#: ../src/pp-options-dialog.c:669
+#: ../src/pp-options-dialog.c:673
 msgctxt "Printer Option Group"
 msgid "Finishing"
 msgstr "Kończenie"
 
 #. Translators: "Advanced" tab contains all others settings
-#: ../src/pp-options-dialog.c:672
+#: ../src/pp-options-dialog.c:676
 msgctxt "Printer Option Group"
 msgid "Advanced"
 msgstr "Zaawansowane"
 
 #. Translators: Name of job which makes printer to print test page
 #. Translators: This button triggers the printing of a test page.
-#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
+#: ../src/pp-options-dialog.c:867 ../src/pp-options-dialog.ui.h:2
 msgid "Test Page"
 msgstr "Strona testowa"
 
 #. Translators: Name of job which makes printer to print test page
-#: ../src/pp-options-dialog.c:876
+#: ../src/pp-options-dialog.c:880
 msgid "Test page"
 msgstr "Strona testowa"
 
@@ -635,23 +643,22 @@ msgstr "Przetwarzanie"
 msgid "Printers"
 msgstr "Drukarki"
 
-#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
-#: ../src/ppd-selection-dialog.ui.h:2
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: ../data/rpinters.ui.h:3
+#: ../data/rpinters.ui.h:2
 #, fuzzy
-msgid "OK"
-msgstr "_Wybierz"
+msgid "_Close"
+msgstr "Za_mknij"
 
-#: ../data/rpinters.ui.h:5
+#: ../data/rpinters.ui.h:4
 msgid "_OK"
 msgstr "_Wybierz"
 
 #: ../src/authentication-dialog.ui.h:1
 msgid " "
 msgstr " "
+
+#: ../src/authentication-dialog.ui.h:2 ../src/ppd-selection-dialog.ui.h:2
+msgid "Cancel"
+msgstr "Anuluj"
 
 #: ../src/authentication-dialog.ui.h:3
 msgid "Authenticate"
@@ -848,3 +855,6 @@ msgstr "Systemowa usługa drukowania jest niedostępna."
 msgid "Add a Printer…"
 msgstr "Dodaj drukarkę…"
 
+#, fuzzy
+#~ msgid "OK"
+#~ msgstr "_Wybierz"
